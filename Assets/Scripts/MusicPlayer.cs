@@ -11,6 +11,7 @@ public class MusicPlayer : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Invoke("loadScene",2f);
+		
 	}
 	
 	void loadScene() {
