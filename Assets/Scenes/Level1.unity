@@ -321,7 +321,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
   m_Name: 
@@ -561,6 +561,16 @@ Prefab:
         type: 2}
       propertyPath: posPitchFactor
       value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114717018558920228, guid: fc0400dafdbcb124fbb19a9bf5da7c88,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65670220292089558, guid: fc0400dafdbcb124fbb19a9bf5da7c88,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc0400dafdbcb124fbb19a9bf5da7c88, type: 2}
@@ -891,7 +901,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1601029122}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d896928629f18904cbbe9a81b4580855, type: 3}
   m_Name: 
