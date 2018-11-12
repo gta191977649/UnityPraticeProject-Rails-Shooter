@@ -100,6 +100,14 @@
      <Compile Include="Assets\Assets\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
      <Compile Include="Assets\Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
      <Compile Include="Assets\Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
+     <Compile Include="Assets\Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
+     <Compile Include="Assets\Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
+     <Compile Include="Assets\Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
+     <Compile Include="Assets\Assets\SampleScenes\Scripts\CameraSwitch.cs" />
+     <Compile Include="Assets\Assets\SampleScenes\Scripts\LevelReset.cs" />
+     <Compile Include="Assets\Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
+     <Compile Include="Assets\Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
+     <Compile Include="Assets\Assets\SampleScenes\Scripts\SlowMoButton.cs" />
      <Compile Include="Assets\Assets\Standard Assets\2D\Scripts\Camera2DFollow.cs" />
      <Compile Include="Assets\Assets\Standard Assets\2D\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Assets\Standard Assets\2D\Scripts\Platformer2DUserControl.cs" />
@@ -195,16 +203,11 @@
      <Compile Include="Assets\Assets\Standard Assets\Vehicles\Car\Scripts\SkidTrail.cs" />
      <Compile Include="Assets\Assets\Standard Assets\Vehicles\Car\Scripts\Suspension.cs" />
      <Compile Include="Assets\Assets\Standard Assets\Vehicles\Car\Scripts\WheelEffects.cs" />
-     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
-     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
-     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
-     <Compile Include="Assets\SampleScenes\Scripts\CameraSwitch.cs" />
-     <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
-     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
-     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
-     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+     <Compile Include="Assets\Scripts\CollisonHandler.cs" />
      <Compile Include="Assets\Scripts\MusicPlayer.cs" />
-     <Compile Include="Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
+     <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\SceneLoad.cs" />
      <None Include="Assets\Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
      <None Include="Assets\Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Assets\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
@@ -281,7 +284,7 @@
      <None Include="Assets\Assets\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularDisplacement.shader" />
      <None Include="Assets\Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
      <None Include="Assets\Assets\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
-     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
+     <None Include="Assets\Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>D:/dev/UnityPraticeProject-Rails-Shooter/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>

@@ -9,15 +9,7 @@ public class MusicPlayer : MonoBehaviour {
 		DontDestroyOnLoad(gameObject);
 	}
 	// Use this for initialization
-	void Start () {
-		Invoke("loadScene",2f);
-		
-	}
 	
-	void loadScene() {
-		SceneManager.LoadScene(1);
-
-	}
 	// Update is called once per frame
 	void Update () {
 	}
