@@ -50,6 +50,7 @@ public class PlayerController : MonoBehaviour {
 	void OnPlayerDealth(){
 		Debug.Log("FREAZED");
 		isControlEnabled = false;
+		gameObject.SetActive(false);
 	}
 
 }
