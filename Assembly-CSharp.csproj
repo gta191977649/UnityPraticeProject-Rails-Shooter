@@ -203,6 +203,7 @@
      <Compile Include="Assets\Assets\Standard Assets\Vehicles\Car\Scripts\SkidTrail.cs" />
      <Compile Include="Assets\Assets\Standard Assets\Vehicles\Car\Scripts\Suspension.cs" />
      <Compile Include="Assets\Assets\Standard Assets\Vehicles\Car\Scripts\WheelEffects.cs" />
+     <Compile Include="Assets\ScoreBoard.cs" />
      <Compile Include="Assets\Scripts\CollisonHandler.cs" />
      <Compile Include="Assets\Scripts\DebuggerScript.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />

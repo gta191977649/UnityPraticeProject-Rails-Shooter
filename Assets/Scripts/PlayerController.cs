@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour {
 	[SerializeField] float posYawFactor = 5f;
 	[SerializeField] float posPitchFactor = -20f;
 	
+	[SerializeField] GameObject[] guns;
 	float xThrow, yThrow;
 	bool isControlEnabled = true;
 	// Use this for initialization
@@ -26,6 +27,18 @@ public class PlayerController : MonoBehaviour {
 		if(isControlEnabled){
 			ProcessTranslation();
 			ProcessRotation();
+			ProcessFiring();
+		}
+	}
+	void ProcessFiring() {
+		if(CrossPlatformInputManager.GetButton("Fire")){
+			foreach(GameObject gun in guns) {
+				gun.SetActive(true);
+			}
+		} else {
+			foreach(GameObject gun in guns) {
+				gun.SetActive(false);
+			}
 		}
 	}
 	void ProcessRotation() {

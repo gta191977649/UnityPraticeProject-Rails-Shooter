@@ -8,10 +8,13 @@ public class Enemy : MonoBehaviour {
 	[SerializeField] Transform parent;
 	// Use this for initialization
 	private BoxCollider collider;
+
+	ScoreBoard scoreBoard;
 	void Start () {
 		//Setup
 		collider = gameObject.AddComponent<BoxCollider>();
 		collider.isTrigger = false;
+		scoreBoard = FindObjectOfType<ScoreBoard>();
 	}
 	
 	// Update is called once per frame
@@ -26,5 +29,7 @@ public class Enemy : MonoBehaviour {
 			
 		fx.transform.parent = parent;
 		Destroy(gameObject);
+
+		scoreBoard.scoreHit();
 	}
 }

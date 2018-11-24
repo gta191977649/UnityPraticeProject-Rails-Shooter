@@ -241,6 +241,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23828867721749496, guid: 60913d6e3a9a88344acdd13e65bbb85f,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e7cf47b6c40740949bf2159be47f090d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60913d6e3a9a88344acdd13e65bbb85f, type: 2}
   m_IsPrefabAsset: 0
@@ -259,6 +264,7 @@ GameObject:
   - component: {fileID: 327935685}
   - component: {fileID: 327935687}
   - component: {fileID: 327935686}
+  - component: {fileID: 327935688}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -324,6 +330,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 327935684}
   m_CullTransparentMesh: 0
+--- !u!114 &327935688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 327935684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df4b848db270be4b8a4f4ae964f5bed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scorePerHit: 12
 --- !u!1 &331521174
 GameObject:
   m_ObjectHideFlags: 0
@@ -10023,6 +10041,42 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1155476244382192, guid: b974858bf2381b0468f1fb354a2dab18,
     type: 2}
   m_PrefabInternal: {fileID: 1473671226}
+--- !u!95 &942405595
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 942405594}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!320 &942405596
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 942405594}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 51e0e1e91d30d9246ae51e7e95dc1894, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 114274444042123290, guid: 51e0e1e91d30d9246ae51e7e95dc1894, type: 2}
+    value: {fileID: 942405595}
+  m_ExposedReferences:
+    m_References: []
 --- !u!114 &942405598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15076,7 +15130,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4798303978813530, guid: b974858bf2381b0468f1fb354a2dab18, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.48857167
+      value: 0.4885717
       objectReference: {fileID: 0}
     - target: {fileID: 4798303978813530, guid: b974858bf2381b0468f1fb354a2dab18, type: 2}
       propertyPath: m_LocalPosition.z
@@ -15104,7 +15158,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4798303978813530, guid: b974858bf2381b0468f1fb354a2dab18, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 158.81
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4798303978813530, guid: b974858bf2381b0468f1fb354a2dab18, type: 2}
       propertyPath: m_LocalScale.x
@@ -15126,6 +15180,14 @@ Prefab:
     - target: {fileID: 65603665751286464, guid: b974858bf2381b0468f1fb354a2dab18,
         type: 2}
       propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4798303978813530, guid: b974858bf2381b0468f1fb354a2dab18, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0.2340758
+      objectReference: {fileID: 0}
+    - target: {fileID: 4798303978813530, guid: b974858bf2381b0468f1fb354a2dab18, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -24718,6 +24780,9 @@ MonoBehaviour:
   controlRollFactor: -5
   posYawFactor: 5
   posPitchFactor: -5
+  guns:
+  - {fileID: 1596771130}
+  - {fileID: 951743363}
 --- !u!1001 &1615186055
 Prefab:
   m_ObjectHideFlags: 0
